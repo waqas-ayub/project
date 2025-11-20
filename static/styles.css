@@ -1,0 +1,52 @@
+:root {
+  --bg-dark: #090f29;
+  --primary: #6655ff;
+  --gradient: radial-gradient(circle at top, #3f37c9, #03045e);
+}
+
+body {
+  background-color: #f4f6fb;
+  color: #1f2937;
+  min-height: 100vh;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.hero {
+  min-height: 50vh;
+  background: var(--gradient);
+  padding: 4rem 0;
+}
+
+.hero input {
+  border: none;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.hero button {
+  background: linear-gradient(135deg, #6c63ff, #7f9cf5);
+  border: none;
+  box-shadow: 0 15px 35px rgba(103, 58, 183, 0.4);
+}
+
+.timeline {
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 0.75rem;
+}
+
+.timeline-entry + .timeline-entry {
+  border-top: 1px solid rgba(99, 102, 241, 0.15);
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+}
+
+.timeline-time {
+  font-size: 0.85rem;
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.timeline-text {
+  color: #1f2937;
+}
+
